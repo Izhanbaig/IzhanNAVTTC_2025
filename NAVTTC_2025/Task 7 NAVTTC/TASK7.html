@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        thead {
+            background-color: greenyellow;
+            width: 10px; height: 10px;
+            text-align: center;
+            
+        }
+        center {
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        span{
+            color: red;
+        }
+        .ABC{
+            background-image: url(https://picsum.photos/50/);
+            color: white;
+            padding: 20px;
+        }
+      
+    
+    
+    </style>
+</head>
+<body>
+    <h1>Report Form</h1>
+    <section class="container">
+        
+   
+    <form action="" method="get">
+
+    <table border="1" width="100%" class="center">
+        <thead>
+             <th class="info-msk" colspan="2">Information</th>
+
+            </thead>
+            <tbody>
+            <tr>
+                <td> <label for=""><strong>NAME</strong></label></td>
+                <td>
+                    <input type="text" required>
+                    <br>Enter your Name
+                </td>
+                </tr>
+                <tr>
+                <td> <label for=""><strong>EMAIL</strong></label></td>
+                <td> <input type="email"required> <br> Enter your Email</td>
+                
+                
+            </tr>
+            <tr>
+                <td> <label for=""><strong>PASSWORD</strong></label></td>
+                 <td> <input type="password" required><br>Enter your secret key</td>
+            </tr>
+            <tr>
+                <td> <label for=""><strong>ADDRESS</strong></label></td>
+                <td><input type="text"required> <br>Complete Address</td>
+
+            </tr>
+            <tr>
+                <td><strong>COUNTRY</strong></td>
+                <td><select name="COUNTRY" style="margin: 10px;">
+                    <option value="P" selected>pakistan</option>
+                    <option value="I">India</option>
+                    <option value="C">China</option>
+                    <option value="A">Afganistan</option>
+                    <option value="M">Malaysia</option>
+                    <option value="A">Africa</option>
+                    <option value="D">Denmark</option>
+
+                </select></td>
+                
+
+            </tr>
+            <tr>
+                <td> <label for=""><strong>GENDER</strong></label></td>
+                <td><input type="radio" id="Male" name="GENDER" value="male">
+                <label for="Male">Male</label>
+            <input type="radio" id="Female" name="GENDER" value="female">
+        <label for="Female">Female</label></td>
+        <tr>
+            <td><label for=""><strong>HOBBIES</strong></label></td>
+          <td>  <input type="checkbox">Reading <br>
+            <input type="checkbox">Listening music <br>
+           <input type="checkbox">Playing Game <br>
+           <input type="checkbox">Gardening  <br>
+            <input type="checkbox">Swimming <br>Check all That Apply</td>
+
+        </tr>
+        <tr>
+            <td>
+               <label for=""> <strong>YOUR WEBSITE</strong></label>
+            </td>
+            <td><input type="url" placeholder="https://"> <br>Enter Your WEBSITE If Exists <span>(not nessesary)</span></td>
+        </tr>
+        <tr>
+            <td>
+                <strong>OTHER INFORMATION <br> ABOUT YOURSELF</strong>
+            </td>
+            <td><textarea placeholder="Write your info here" name="message" id="mes" cols="30" rows="10"></textarea><br>
+            Write any other information</td>
+        </tr>
+        <tr>
+            <td style="text-align: right;">
+                <input class="ABC" type="submit" value="Send in my Report">
+            </td>
+            <td>
+                <input class="ABC" type="submit" value="Erase report Form">
+            </td>
+        </tr>
+
+                
+
+            
+        </tbody>
+    </table>
+    </form>
+    </section>
+    
+</body>
+</html>
