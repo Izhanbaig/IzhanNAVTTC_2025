@@ -1,0 +1,16 @@
+.row{
+    background-image:  url(Untitled\ design.png);
+ background-attachment: fixed;
+ background-size: 100%;
+ background-repeat: no-repeat;    
+}
+.cols{
+  margin-top: 250px;
+  margin-left: 50px;
+}
+.col-4 , col{
+  margin-left: 50px;
+
+}
+
+
