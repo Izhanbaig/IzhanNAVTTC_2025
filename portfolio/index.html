@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url(ChatGPT\ Image\ Apr\ 17\,\ 2025\,\ 10_29_47\ PM.png);
+    }
+
+    nav {
+      background-color: #000;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .logo {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #6c63ff;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 2rem;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #000;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 0;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+
+    .row1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px 20px;
+      flex-wrap: wrap;
+    }
+
+    .col1 {
+      flex: 1;
+      min-width: 280px;
+      padding: 20px;
+    }
+
+    .col2 {
+      flex: 1;
+      min-width: 280px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .col2 img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .animated-button {
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .animated-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(146, 141, 171, 0.5);
+    }
+
+    .services-section,
+    .about-section,
+    .contact-section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .services-section {
+      background: gainsboro;
+    }
+
+    .service-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .service-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    .contact-form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .contact-form button {
+      background: #6c63ff;
+      color: white;
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .footer {
+      background: #1f1f1f;
+      color: #ccc;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .social-icons a {
+      color: #ccc;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .social-icons a:hover {
+      color: #6c63ff;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+    .about-section{
+      background-color: lightblue;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">CodesByIzhan</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <div class="nav-links" id="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="row1" id="home">
+    <div class="col1">
+      <h3>HELLO</h3>
+      <h1>My Name Is <span style="color: yellow;">IZHAN BAIG</span></h1>
+      <p>I am a professional web Designer with 2+ years of experience.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam architecto dolores hic ea mollitia.</p>
+      <br />
+      <button class="animated-button" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">
+        Contact Me
+      </button>
+    </div>
+    <div class="col2">
+      <img src="95536242-vector-cartoon-illustation-of-man-working-on-laptop-computer-at-the-table-businessman-or-office-removebg-preview.png" alt="Working man">
+    </div>
+  </section>
+
+  <section class="services-section" id="services">
+    <h2>My Services</h2>
+    <div class="service-cards">
+      <div class="service-card">
+        <h3>Web Development</h3>
+        <p>I design and develop responsive, SEO-friendly websites tailored to your business goals.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate Web Developer dedicated to creating functional and user-friendly websites using modern technologies.
+    <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, dolore! Magni in impedit corporis eaque iusto distinctio, quisquam sequi dolor suscipit. Nisi numquam cum culpa adipisci, ab fugit deserunt porro!
+    </p>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <h2 style="padding-bottom: 5px;">Contact Me</h2>
+    <form class="contact-form" action="mailto:your@email.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <h3>Let's Connect</h3>
+    <p>Follow me on social media or reach out directly.</p>
+    <div class="social-icons">
+      <a href="https://www.fiverr.com/codesbyizhan?public_mode=true" target="_blank">Fiverr</a>
+      <a href="https://www.linkedin.com/in/izhan-baig-a19b9a342" target="_blank">LinkedIn</a>
+      <a href="mailto:thisisizhan4@gmail.com">Email</a>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Izhan Baig. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const links = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
